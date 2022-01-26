@@ -1,1 +1,37 @@
-<mxfile host="app.diagrams.net" modified="2022-01-26T01:59:48.048Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" version="16.4.3" etag="XaBfmPwBn4RJ5mm94MDg" type="github"><diagram id="MPTiDMnPMbFnQHFzoAAt">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-26T02:08:11.591Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="hV43Af-QOxvN_E8rSkm0" version="16.4.3" type="github">
+  <diagram id="MPTiDMnPMbFnQHFzoAAt" name="第 1 页">
+    <mxGraphModel dx="865" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eaRhNZwLCp4jW2DmWbAI-1" value="sleep" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="150" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eaRhNZwLCp4jW2DmWbAI-2" value="释放cpu资源，锁资源没有释放" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="160" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eaRhNZwLCp4jW2DmWbAI-3" value="synchronize&amp;nbsp; 同步" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="455" y="210" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eaRhNZwLCp4jW2DmWbAI-4" value="wait" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eaRhNZwLCp4jW2DmWbAI-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="120" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="eaRhNZwLCp4jW2DmWbAI-6" value="main线程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="215" y="250" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eaRhNZwLCp4jW2DmWbAI-7" value="Thread t1=new Thread()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="290" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eaRhNZwLCp4jW2DmWbAI-8" value="t1.join()&amp;nbsp; &amp;nbsp;&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="225" y="370" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eaRhNZwLCp4jW2DmWbAI-9" value="当前线程main&amp;nbsp; 里调用 t1线程的join方法，&lt;br&gt;等t1线程执行完后在执行main线程中的逻辑" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="305" width="240" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
